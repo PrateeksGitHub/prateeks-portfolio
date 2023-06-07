@@ -14,9 +14,9 @@ const TypingAnimation = ({ strings, className }) => {
         setTimeout(() => {
           setCurrentText("");
           setCurrentIndex((currentIndex + 1) % strings.length);
-        }, 1000); // Pause for 2 seconds before starting next string
+        }, 700); // Pause for 1 seconds before starting next string
       }
-    }, 200);
+    }, 100);
 
     return () => {
       clearInterval(typingInterval);

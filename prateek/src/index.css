@@ -29,3 +29,19 @@ code {
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
+
+@keyframes mercuryTypingAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  28% {
+    transform: translateY(-7px);
+  }
+  44% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-chat-typing {
+  animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+}

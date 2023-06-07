@@ -8,6 +8,8 @@ const MessageTypingAnimation = ({
 }) => {
   const [wavePosition, setWavePosition] = useState(0);
   const [isWaveActive, setIsWaveActive] = useState(true);
+  const messageBubbleConfig =
+    "px-4 bg-secondary p-2 rounded-2xl rounded-bl-none h-10 items-center";
 
   useEffect(() => {
     const animationInterval = setInterval(() => {
@@ -27,21 +29,23 @@ const MessageTypingAnimation = ({
   return (
     <div className={`flex items-center ${className}`}>
       {isWaveActive ? (
-        <div className="bg-secondary p-2 rounded-lg h-10">
+        <div className={`${messageBubbleConfig} py-4`}>
           <div className="flex items-center">
             {[0, 1, 2, 3].map((index) => (
               <div
                 key={index}
                 className={`h-2 w-2 bg-primary rounded-full mx-1 ${
-                  wavePosition === index ? "animate-bounce ease-in-out" : ""
+                  wavePosition === index ? `animate-chat-typing` : ""
                 }`}
               ></div>
             ))}
           </div>
         </div>
       ) : (
-        <div className="bg-secondary p-2 rounded-lg rounded-bl-none h-10">
-          <p className="mx-2">{message}</p>
+        <div className={`${messageBubbleConfig}`}>
+          <p className="text-primary font-sans font-medium text-xl">
+            {message}
+          </p>
         </div>
       )}
     </div>
