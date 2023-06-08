@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ReactComponent as MenuHamburgerSVG } from "../assets/hamburger-menu-icon.svg";
+
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
     setIsMenuOpen(!isMenuOpen);

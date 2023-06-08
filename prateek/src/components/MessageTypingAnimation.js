@@ -9,7 +9,7 @@ const MessageTypingAnimation = ({
   const [wavePosition, setWavePosition] = useState(0);
   const [isWaveActive, setIsWaveActive] = useState(true);
   const messageBubbleConfig =
-    "px-4 bg-secondary p-2 rounded-2xl rounded-bl-none h-10 items-center";
+    "flex px-4 bg-secondary p-2 rounded-2xl rounded-bl-none h-10 items-center";
 
   useEffect(() => {
     const animationInterval = setInterval(() => {
@@ -42,11 +42,13 @@ const MessageTypingAnimation = ({
           </div>
         </div>
       ) : (
-        <div className={`${messageBubbleConfig}`}>
-          <p className="text-primary font-sans font-medium text-xl">
-            {message}
-          </p>
-        </div>
+        <button onClick={console.log("to be implemeted")}>
+          <div className={`${messageBubbleConfig}`}>
+            <p className="text-primary font-sans font-semibold text-xl">
+              {message}
+            </p>
+          </div>
+        </button>
       )}
     </div>
   );
