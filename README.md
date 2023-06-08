@@ -1,2 +1,2 @@
-# prateeks-portfolio
+# Prateek's Portfolio
 Code for a website about me
