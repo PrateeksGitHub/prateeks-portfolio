@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/prateeks-portfolio/static/css/main.4b77122c.css",
-    "main.js": "/prateeks-portfolio/static/js/main.250a74b5.js",
+    "main.css": "/prateeks-portfolio/static/css/main.4315ce5a.css",
+    "main.js": "/prateeks-portfolio/static/js/main.a61e4628.js",
     "static/js/787.47744b08.chunk.js": "/prateeks-portfolio/static/js/787.47744b08.chunk.js",
     "static/media/prateek-blob-profile-display-picture.png": "/prateeks-portfolio/static/media/prateek-blob-profile-display-picture.cc91b88d5d79db3a92c0.png",
     "static/media/python.svg": "/prateeks-portfolio/static/media/python.aef6d4215aaba8aaa0880245a0c10c5e.svg",
@@ -11,12 +11,12 @@
     "static/media/linkedIn-logo.svg": "/prateeks-portfolio/static/media/linkedIn-logo.af2bc278db93966672b889f54b6c2b2d.svg",
     "index.html": "/prateeks-portfolio/index.html",
     "static/media/hamburger-menu-icon.svg": "/prateeks-portfolio/static/media/hamburger-menu-icon.de6615290284fe90255e3d288eaf297e.svg",
-    "main.4b77122c.css.map": "/prateeks-portfolio/static/css/main.4b77122c.css.map",
-    "main.250a74b5.js.map": "/prateeks-portfolio/static/js/main.250a74b5.js.map",
+    "main.4315ce5a.css.map": "/prateeks-portfolio/static/css/main.4315ce5a.css.map",
+    "main.a61e4628.js.map": "/prateeks-portfolio/static/js/main.a61e4628.js.map",
     "787.47744b08.chunk.js.map": "/prateeks-portfolio/static/js/787.47744b08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b77122c.css",
-    "static/js/main.250a74b5.js"
+    "static/css/main.4315ce5a.css",
+    "static/js/main.a61e4628.js"
   ]
 }
