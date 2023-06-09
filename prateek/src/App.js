@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import SkillsSection from "./components/SkillsSection";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Navbar className="relative z-10 px-6 md:px-20"></Navbar>
           <HeroSection className="flex-grow relative z-0"></HeroSection>
         </div>
+        <AboutMe></AboutMe>
         <SkillsSection
           skillTitles={[
             "Python",
@@ -28,7 +30,6 @@ function App() {
             "Python",
             "Python",
           ]}
-          className="relative z-0"
         ></SkillsSection>
       </main>
     </div>

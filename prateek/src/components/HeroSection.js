@@ -14,7 +14,7 @@ function HeroSection({ className }) {
         id="hero-text-and-action"
         className="flex flex-row md:w-1/2 sm:h-1/2 max-w-7xl my-8 md:my-0 order-2 md:order-1 md:px-8 justify-end items-start"
       >
-        <div flex flex-col>
+        <div className="flex flex-col">
           <h1 className="text-4xl md:text-6xl text-secondary font-sans py-1">
             Welcome! I am
           </h1>
