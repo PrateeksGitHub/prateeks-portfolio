@@ -6,23 +6,23 @@ import { ReactComponent as RiotValorantLogo } from "../assets/riot-valorant-logo
 
 const Socials = ({ className }) => {
   const socialButtonConfig =
-    "p-0 md:p-2 rounded-lg md:border-transparent md:border-2 md:hover:border-accent md:hover:border-2 md:hover:border-opacity-75 transition duration-200 ease-in-out";
-
+    "md:p-2 rounded-lg hover:fill-accent transition duration-300 ease-in-out";
+  const logoConfig = "h-4 md:h-6";
   return (
     <ul
-      className={`flex flex-col fill-accent items-center space-y-4 md:space-y-8 ${className}`}
+      className={`flex flex-col fill-primary  items-center space-y-4 md:space-y-8 ${className}`}
     >
       <li className={socialButtonConfig}>
-        <LinkedInLogo height="24"></LinkedInLogo>
+        <LinkedInLogo className={logoConfig}></LinkedInLogo>
       </li>
       <li className={socialButtonConfig}>
-        <GitHub height="24"></GitHub>
+        <GitHub className={logoConfig}></GitHub>
       </li>
       <li className={socialButtonConfig}>
-        <DiscordLogo height="24"></DiscordLogo>
+        <DiscordLogo className={logoConfig}></DiscordLogo>
       </li>
       <li className={socialButtonConfig}>
-        <RiotValorantLogo height="24"></RiotValorantLogo>
+        <RiotValorantLogo className={logoConfig}></RiotValorantLogo>
       </li>
     </ul>
   );

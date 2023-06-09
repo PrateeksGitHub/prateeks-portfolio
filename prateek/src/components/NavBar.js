@@ -20,15 +20,15 @@ const Navbar = ({ className }) => {
     >
       <div
         id="nav bar menu"
-        className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-end"
+        className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-center"
       >
-        <Socials className="md:hidden flex self-end pr-4 top-4 relative z-20"></Socials>
+        <Socials className="md:hidden flex self-end top-4 relative z-20 space-y-6"></Socials>
 
         <button
           className="md:hidden p-4 font-sans font-bold text-3xl absolute"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <MenuHamburgerSVG className="fill-accent"></MenuHamburgerSVG>
+          <MenuHamburgerSVG className="fill-accent h-5"></MenuHamburgerSVG>
         </button>
         <ul
           id="navbar-menu-list"

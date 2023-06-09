@@ -1,33 +1,23 @@
 import React from "react";
-import { ReactComponent as PythonLogo } from "../assets/skills/python.svg";
-function SkillsSection(className) {
-  const logoClassName =
-    "h-20 p-3 m-4 md:m-10 justify-center content-center border-2 border-accent rounded-xl border-opacity-0 hover:border-opacity-75";
+import SkillTile from "./SkillTile";
+function SkillsSection({ skillTitles, className }) {
+  const skillsLogosBasePath = "../assets/skills";
   return (
     <section
       id="skills"
       className={`flex flex-col justify-center min-h-screen ${className}`}
     >
-      <h1 className="font-sans font-bold text-4xl text-primary m-12 md:mx-16 md:p-4">
+      <h1 className="font-sans font-bold text-4xl text-primary m-16 md:mx-48 md:p-4">
         Skills
       </h1>
       <div className="flex flex-wrap justify-center items-baseline">
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
-        <PythonLogo className={logoClassName} />
+        {skillTitles.map((skill) => (
+          <SkillTile
+            key={`${skill}`}
+            skillName={skill}
+            svgLogoPath={`${skillsLogosBasePath}/${skill}.svg`}
+          ></SkillTile>
+        ))}
       </div>
     </section>
   );
