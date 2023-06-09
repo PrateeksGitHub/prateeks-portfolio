@@ -12,9 +12,9 @@ function AboutMe({ className }) {
         honed my craft in designing, building, and maintaining production grade
         software & data pipelines at scale. 👨‍💻 I am a beginner at UI-UX Design
         🎨 and Music Production. 🎵 I pride myself on being an effective
-        communicator and also am passionate about Sustainability. 🌏 When I’m
-        not being an engineer, I like to play Valorant 🎮 , take walks listening
-        to audiobooks & podcasts. Also, extremely rarely, I workout.
+        communicator and also am passionate about Sustainability. 🌏 When Im not
+        being an engineer, I like to play Valorant 🎮 , take walks listening to
+        audiobooks & podcasts. Also, extremely rarely, I workout.
       </p>
     </section>
   );
