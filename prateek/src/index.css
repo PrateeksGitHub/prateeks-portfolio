@@ -45,3 +45,13 @@ code {
 .animate-chat-typing {
   animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
 }
+
+.heading-1 {
+  @apply font-sans font-bold text-4xl text-primary;
+}
+.heading-2 {
+  @apply font-sans font-bold text-3xl text-primary;
+}
+.paragraph {
+  @apply font-sans font-normal text-xl text-primary;
+}

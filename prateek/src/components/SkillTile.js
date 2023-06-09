@@ -8,7 +8,7 @@ function SkillTile({
 }) {
   return (
     <div
-      className={`flex flex-col items-center p-2 m-4 justify-center content-center border-2 border-accent rounded-xl border-opacity-0 hover:border-opacity-75 font-sans text-primary ${className}`}
+      className={`flex flex-col items-center p-2 m-4 justify-center content-center border-2 hover:border-accent rounded-xl border-transparent hover:border-opacity-75 duration-200 ease-in-out font-sans text-primary ${className}`}
     >
       <img
         src={svgLogoPath}

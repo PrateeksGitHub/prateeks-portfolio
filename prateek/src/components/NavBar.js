@@ -13,10 +13,10 @@ const Navbar = ({ className }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const buttonClassConfig =
     "px-3 py-2 max-sm:hover:text-accent text-primary tracking-wider rounded-lg md:border-transparent md:border-2 md:hover:border-accent md:hover:border-2 transition duration-200 ease-in-out";
-  const smallNavBarHeight = "16";
+
   return (
     <nav
-      className={`flex flex-col bg-background min-w-full h-${smallNavBarHeight} md:pt-24 ${className}`}
+      className={`flex flex-col bg-background min-w-full h-16 md:pt-24 ${className}`}
     >
       <div
         id="nav bar menu"
@@ -28,12 +28,14 @@ const Navbar = ({ className }) => {
           className="flex absolute top-10 mx-4 md:hidden font-sans font-bold text-3xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <MenuHamburgerSVG className="fill-primary hover:fill-accent h-5"></MenuHamburgerSVG>
+          <MenuHamburgerSVG
+            className={`${isMenuOpen ? "fill-accent" : "fill-primary"} h-5`}
+          ></MenuHamburgerSVG>
         </button>
         <ul
           id="navbar-menu-list"
           className={`${isMenuOpen ? "flex" : "hidden"}
-            md:flex md:flex-row flex-col bg-background font-extralight md:text-lg text-3xl md:space-x-10 max-sm:space-y-4 max-sm:w-2/3 max-sm:py-4 max-sm:mt-${smallNavBarHeight} max-sm:bg-opacity-95`}
+            md:flex md:flex-row flex-col bg-background rounded-md font-extralight md:text-lg text-3xl md:space-x-10 max-sm:space-y-4 max-sm:w-2/3 max-sm:py-4 max-sm:top-24 absolute max-sm:bg-opacity-95`}
         >
           <li>
             <button

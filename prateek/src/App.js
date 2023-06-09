@@ -3,6 +3,7 @@ import Navbar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import SkillsSection from "./components/SkillsSection";
 import AboutMe from "./components/AboutMe";
+import JourneySection from "./components/JourneySection";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
           <Navbar className="relative z-10 px-6 md:px-48"></Navbar>
           <HeroSection className="flex-grow relative z-0"></HeroSection>
         </div>
-        <AboutMe></AboutMe>
+        <AboutMe className="my-16"></AboutMe>
         <SkillsSection
+          className="my-16"
           skillTitles={[
             "Python",
             "Python",
@@ -31,6 +33,7 @@ function App() {
             "Python",
           ]}
         ></SkillsSection>
+        <JourneySection className="my-16"></JourneySection>
       </main>
     </div>
   );

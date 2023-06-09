@@ -5,7 +5,7 @@ function SkillsSection({ skillTitles, className }) {
   return (
     <section
       id="skills"
-      className={`flex flex-col justify-center min-h-screen m-12 md:mx-48 md:p-4 ${className}`}
+      className={`flex flex-col justify-center mx-12 md:mx-48 md:px-4 ${className}`}
     >
       <h1 className="font-sans font-bold text-4xl text-primary ">My Toolkit</h1>
       <div className="flex flex-wrap justify-normal items-baseline my-12">
