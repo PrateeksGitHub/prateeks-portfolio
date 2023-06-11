@@ -1,21 +1,35 @@
 {
   "files": {
-    "main.css": "/prateeks-portfolio/static/css/main.5b657d97.css",
-    "main.js": "/prateeks-portfolio/static/js/main.ce52e91a.js",
+    "main.css": "/prateeks-portfolio/static/css/main.b300bbe9.css",
+    "main.js": "/prateeks-portfolio/static/js/main.aba3aafb.js",
     "static/js/787.47744b08.chunk.js": "/prateeks-portfolio/static/js/787.47744b08.chunk.js",
     "static/media/prateek-blob-profile-display-picture.png": "/prateeks-portfolio/static/media/prateek-blob-profile-display-picture.e986d826669965ab1ee7.png",
+    "static/media/flutter.svg": "/prateeks-portfolio/static/media/flutter.c2cea0063b2f169f600926a6dc324b23.svg",
+    "static/media/kubernetes.svg": "/prateeks-portfolio/static/media/kubernetes.83f33ed7d8fed75cfad47bbcce7bed14.svg",
+    "static/media/reactjs.svg": "/prateeks-portfolio/static/media/reactjs.4b3cdbdc15ffe9890fbd7b92d1d6ed9d.svg",
+    "static/media/postgresql.svg": "/prateeks-portfolio/static/media/postgresql.07456ebb535c185e1093f45756c2e138.svg",
+    "static/media/aws.svg": "/prateeks-portfolio/static/media/aws.181112292c1dad8682ca85b971de2780.svg",
+    "static/media/nextjs.svg": "/prateeks-portfolio/static/media/nextjs.878b51ae125f733e4f397750d25670e3.svg",
+    "static/media/git.svg": "/prateeks-portfolio/static/media/git.7bc8d4358ebfabc9a017dd8834c655b3.svg",
+    "static/media/python.svg": "/prateeks-portfolio/static/media/python.6ada48dba838a2dffbfa9658bcab52b5.svg",
+    "static/media/sentry.svg": "/prateeks-portfolio/static/media/sentry.60a07d328962198f7541bd4bbb55afc3.svg",
     "static/media/discord-logo.svg": "/prateeks-portfolio/static/media/discord-logo.e47d270ba6185fab6159ee4495254270.svg",
     "static/media/github-logo.svg": "/prateeks-portfolio/static/media/github-logo.6031f2f885610143417fd341a4492911.svg",
+    "static/media/javascript.svg": "/prateeks-portfolio/static/media/javascript.623daa9f86f9e3491bf4dc476c451d8b.svg",
+    "static/media/figma.svg": "/prateeks-portfolio/static/media/figma.a10bea70d20bc186319872472c377cdf.svg",
+    "static/media/django.svg": "/prateeks-portfolio/static/media/django.760eab6c8114eba5abe43d3f2eb6ab02.svg",
     "static/media/riot-valorant-logo.svg": "/prateeks-portfolio/static/media/riot-valorant-logo.8cddbbf47889fed948310df87a764490.svg",
     "static/media/linkedIn-logo.svg": "/prateeks-portfolio/static/media/linkedIn-logo.af2bc278db93966672b889f54b6c2b2d.svg",
     "index.html": "/prateeks-portfolio/index.html",
+    "static/media/pandas.svg": "/prateeks-portfolio/static/media/pandas.a075dc472cd3537de881fe4f0476a965.svg",
+    "static/media/docker.svg": "/prateeks-portfolio/static/media/docker.f052f571defd99d86d647808ae8846fb.svg",
     "static/media/hamburger-menu-icon.svg": "/prateeks-portfolio/static/media/hamburger-menu-icon.de6615290284fe90255e3d288eaf297e.svg",
-    "main.5b657d97.css.map": "/prateeks-portfolio/static/css/main.5b657d97.css.map",
-    "main.ce52e91a.js.map": "/prateeks-portfolio/static/js/main.ce52e91a.js.map",
+    "main.b300bbe9.css.map": "/prateeks-portfolio/static/css/main.b300bbe9.css.map",
+    "main.aba3aafb.js.map": "/prateeks-portfolio/static/js/main.aba3aafb.js.map",
     "787.47744b08.chunk.js.map": "/prateeks-portfolio/static/js/787.47744b08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b657d97.css",
-    "static/js/main.ce52e91a.js"
+    "static/css/main.b300bbe9.css",
+    "static/js/main.aba3aafb.js"
   ]
 }
