@@ -14,25 +14,7 @@ function App() {
           <HeroSection className="flex-grow relative z-0"></HeroSection>
         </div>
         <AboutMe className="my-16"></AboutMe>
-        <SkillsSection
-          className="my-16"
-          skillTitles={[
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-            "Python",
-          ]}
-        ></SkillsSection>
+        <SkillsSection className="my-16"></SkillsSection>
         <JourneySection className="my-16"></JourneySection>
       </main>
     </div>
