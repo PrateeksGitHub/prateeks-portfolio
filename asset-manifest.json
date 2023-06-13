@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/prateeks-portfolio/static/css/main.b300bbe9.css",
-    "main.js": "/prateeks-portfolio/static/js/main.aba3aafb.js",
+    "main.css": "/prateeks-portfolio/static/css/main.30ad5844.css",
+    "main.js": "/prateeks-portfolio/static/js/main.c7a1e3f4.js",
     "static/js/787.47744b08.chunk.js": "/prateeks-portfolio/static/js/787.47744b08.chunk.js",
     "static/media/prateek-blob-profile-display-picture.png": "/prateeks-portfolio/static/media/prateek-blob-profile-display-picture.e986d826669965ab1ee7.png",
     "static/media/flutter.svg": "/prateeks-portfolio/static/media/flutter.c2cea0063b2f169f600926a6dc324b23.svg",
@@ -24,12 +24,12 @@
     "static/media/pandas.svg": "/prateeks-portfolio/static/media/pandas.a075dc472cd3537de881fe4f0476a965.svg",
     "static/media/docker.svg": "/prateeks-portfolio/static/media/docker.f052f571defd99d86d647808ae8846fb.svg",
     "static/media/hamburger-menu-icon.svg": "/prateeks-portfolio/static/media/hamburger-menu-icon.de6615290284fe90255e3d288eaf297e.svg",
-    "main.b300bbe9.css.map": "/prateeks-portfolio/static/css/main.b300bbe9.css.map",
-    "main.aba3aafb.js.map": "/prateeks-portfolio/static/js/main.aba3aafb.js.map",
+    "main.30ad5844.css.map": "/prateeks-portfolio/static/css/main.30ad5844.css.map",
+    "main.c7a1e3f4.js.map": "/prateeks-portfolio/static/js/main.c7a1e3f4.js.map",
     "787.47744b08.chunk.js.map": "/prateeks-portfolio/static/js/787.47744b08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b300bbe9.css",
-    "static/js/main.aba3aafb.js"
+    "static/css/main.30ad5844.css",
+    "static/js/main.c7a1e3f4.js"
   ]
 }
