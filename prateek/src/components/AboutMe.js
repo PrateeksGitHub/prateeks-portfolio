@@ -4,13 +4,13 @@ function AboutMe({ className }) {
   return (
     <section
       id="about"
-      className={`flex flex-col justify-center md:mx-48 md:p-4 ${className}`}
+      className={`flex flex-col justify-center mx-12 md:mx-48 md:p-4 ${className}`}
     >
-      <h1 className="font-sans font-bold text-4xl text-primary md:my-16">
+      <h1 className="font-sans font-bold text-4xl text-primary my-16">
         About Me
       </h1>
       <p className="font-sans text-primary text-xl">
-        As a FullStack Engineer with 2 years of experience at Skit.ai, I have
+        As a FullStack Developer with 2 years of experience at Skit.ai, I have
         honed my craft in designing, building, and maintaining production grade
         software & data pipelines at scale. 👨‍💻 I am a beginner at UI-UX Design
         🎨 and Music Production. 🎵 I pride myself on being an effective
