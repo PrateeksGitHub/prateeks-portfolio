@@ -5,6 +5,7 @@ const MessageTypingAnimation = ({
   waveDuration,
   message,
   className,
+  onClick = () => console.log("to be implemeted"),
 }) => {
   const [wavePosition, setWavePosition] = useState(0);
   const [isWaveActive, setIsWaveActive] = useState(true);
@@ -42,7 +43,7 @@ const MessageTypingAnimation = ({
           </div>
         </div>
       ) : (
-        <button onClick={console.log("to be implemeted")}>
+        <button onClick={onClick}>
           <div className={`${messageBubbleConfig}`}>
             <p className="text-primary font-sans font-semibold text-xl">
               {message}

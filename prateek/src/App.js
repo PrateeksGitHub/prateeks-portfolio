@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import SkillsSection from "./components/SkillsSection";
 import AboutMe from "./components/AboutMe";
 import JourneySection from "./components/JourneySection";
+import ContactMeSection from "./components/ContactMeSection";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <AboutMe className="my-16"></AboutMe>
         <SkillsSection className="my-16"></SkillsSection>
         <JourneySection className="my-16"></JourneySection>
+        <ContactMeSection className="my-16"></ContactMeSection>
       </main>
     </div>
   );

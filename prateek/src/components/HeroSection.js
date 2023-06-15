@@ -38,6 +38,12 @@ function HeroSection({ className }) {
           waveDuration={2000}
           typingSpeed={200}
           className="pt-16"
+          onClick={() => {
+            const section = document.getElementById("contact");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
         ></MessageTypingAnimation>
       </div>
       <div
