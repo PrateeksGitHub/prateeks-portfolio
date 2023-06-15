@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/prateeks-portfolio/static/css/main.b6c7928a.css",
-    "main.js": "/prateeks-portfolio/static/js/main.61bf9af8.js",
+    "main.js": "/prateeks-portfolio/static/js/main.8d3057f7.js",
     "static/js/787.47744b08.chunk.js": "/prateeks-portfolio/static/js/787.47744b08.chunk.js",
     "static/media/prateek-blob-profile-display-picture.png": "/prateeks-portfolio/static/media/prateek-blob-profile-display-picture.e986d826669965ab1ee7.png",
     "static/media/flutter.svg": "/prateeks-portfolio/static/media/flutter.c2cea0063b2f169f600926a6dc324b23.svg",
@@ -25,11 +25,11 @@
     "static/media/docker.svg": "/prateeks-portfolio/static/media/docker.f052f571defd99d86d647808ae8846fb.svg",
     "static/media/hamburger-menu-icon.svg": "/prateeks-portfolio/static/media/hamburger-menu-icon.de6615290284fe90255e3d288eaf297e.svg",
     "main.b6c7928a.css.map": "/prateeks-portfolio/static/css/main.b6c7928a.css.map",
-    "main.61bf9af8.js.map": "/prateeks-portfolio/static/js/main.61bf9af8.js.map",
+    "main.8d3057f7.js.map": "/prateeks-portfolio/static/js/main.8d3057f7.js.map",
     "787.47744b08.chunk.js.map": "/prateeks-portfolio/static/js/787.47744b08.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6c7928a.css",
-    "static/js/main.61bf9af8.js"
+    "static/js/main.8d3057f7.js"
   ]
 }
