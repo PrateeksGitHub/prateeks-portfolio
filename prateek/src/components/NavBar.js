@@ -35,7 +35,7 @@ const Navbar = ({ className }) => {
         <ul
           id="navbar-menu-list"
           className={`${isMenuOpen ? "flex" : "hidden"}
-            md:flex md:flex-row flex-col bg-background rounded-md font-extralight md:text-lg text-3xl md:space-x-10 max-sm:space-y-4 max-sm:w-2/3 max-sm:py-4 max-sm:top-24 absolute max-sm:bg-opacity-95`}
+            md:flex md:flex-row flex-col bg-background rounded-md font-light md:text-lg text-3xl md:space-x-10 max-sm:space-y-4 max-sm:w-2/3 max-sm:py-4 max-sm:top-24 absolute max-sm:bg-opacity-95`}
         >
           <li>
             <button
@@ -56,17 +56,18 @@ const Navbar = ({ className }) => {
           <li>
             <button
               className={buttonClassConfig}
-              onClick={() => scrollToSection("experience")}
-            >
-              experience
-            </button>
-          </li>
-          <li>
-            <button
-              className={buttonClassConfig}
               onClick={() => scrollToSection("skills")}
             >
               skills
+            </button>
+          </li>
+
+          <li>
+            <button
+              className={buttonClassConfig}
+              onClick={() => scrollToSection("journey")}
+            >
+              experience
             </button>
           </li>
           <li>

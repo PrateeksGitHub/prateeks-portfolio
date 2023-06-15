@@ -8,7 +8,6 @@ function JourneyPoint({
   duration,
   links,
 }) {
-  const componentHeight = 72;
   const [isClicked, setIsClicked] = useState(false);
   const journeyRef = useRef(null);
   const lineRef = useRef(null);
@@ -55,17 +54,20 @@ function JourneyPoint({
       </div>
       <div
         id="journey-point-info"
-        className="flex flex-col mx-4 md:mx-12 my-4 md:my-8"
+        className="flex flex-col mx-4 md:mx-12 my-4 md:my-8 border-2 border-accent border-opacity-75 p-8 rounded-xl"
+        onClick={handleClick}
       >
         <h2 className="heading-2 py-1 md:py-2">{organisation}</h2>
         <h2 className="heading-2 font-light italic py-1 md:py-2">{title}</h2>
         <p
-          className={`paragraph-sm overflow-hidden py-1 md:py-2 ${
-            isClicked ? "max-h-fit" : "max-h-48"
+          className={`paragraph text-sm md:text-base overflow-hidden py-1 md:py-2 ${
+            isClicked ? "max-h-fit" : "max-h-48 md:max-h-32"
           }`}
-          onClick={handleClick}
         >
           {smallBody}
+        </p>
+        <p className="paragraph text-sm md:text-base text-accent">
+          {isClicked ? `read less.` : `read more.`}
         </p>
       </div>
     </div>
