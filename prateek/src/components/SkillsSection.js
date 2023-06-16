@@ -34,10 +34,10 @@ function SkillsSection({ className }) {
       id="skills"
       className={`flex flex-col justify-center mx-12 md:mx-48 md:px-4 ${className}`}
     >
-      <h1 className="font-sans font-bold text-4xl text-primary my-16 ">
+      <h1 className="font-sans font-bold text-4xl text-primary my-8 pt-8 ">
         My Toolkit
       </h1>
-      <div className="flex flex-wrap justify-normal items-baseline -mx-8">
+      <div className="flex flex-wrap justify-around items-baseline -mx-8">
         <SkillTile svgLogo={PythonLogo} skillName="Python" />
         <SkillTile svgLogo={JavaScriptLogo} skillName="JavaScript" />
         <SkillTile svgLogo={DjangoLogo} skillName="Django" />

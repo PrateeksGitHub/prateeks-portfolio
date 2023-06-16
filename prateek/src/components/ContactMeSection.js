@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
 import MessageTypingAnimation from "./MessageTypingAnimation";
+import sendEmail from "../sendEmail";
 
 function ContactMeSection({ className }) {
   const labelConfig = "block m-3 paragraph text-2xl";
   const inputConfig =
-    "bg-background block w-full py-3 px-6 paragraph placeholder-gray-400 placeholder-opacity-60 rounded-3xl border-2 border-accent border-opacity-80 hover:border-opacity-100 focus:border-opacity-100 focus:ring-1 focus-visible:outline-none focus:ring-opacity-100 transition-transformation ease-in-out duration-300";
+    "bg-background block w-full py-3 px-6 paragraph placeholder-gray-400 placeholder-opacity-60 rounded-xl border-2 border-accent border-opacity-80 hover:border-opacity-100 focus:border-opacity-100 focus:ring-1 focus-visible:outline-none focus:ring-opacity-100 transition-transformation ease-in-out duration-300";
   const [isSubmitting, setIsSubmitting] = useState(false);
   function handleSubmit() {
     setIsSubmitting(true);
@@ -19,10 +20,8 @@ function ContactMeSection({ className }) {
     // Perform any necessary validation or data processing here
     console.log(name, email, phone, message);
     // Simulate submission delay
-    setTimeout(() => {
-      console.log("Form submitted!");
-      setIsSubmitting(false);
-    }, 2000);
+    console.log("Form submitted!");
+    setIsSubmitting(false);
   }
 
   return (
@@ -30,7 +29,7 @@ function ContactMeSection({ className }) {
       id="contact"
       className={`flex flex-col justify-center mx-12 md:mx-48 md:p-4 ${className}`}
     >
-      <h1 className="heading-1 my-16">Contact Me</h1>
+      <h1 className="heading-1 my-8 pt-8">Contact Me</h1>
       <p id="contact-me-message" className="paragraph mb-16">
         Thank you for visiting my profile! If you have any questions or would
         like to discuss potential opportunities, please feel free to reach out

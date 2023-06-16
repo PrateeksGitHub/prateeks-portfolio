@@ -7,7 +7,7 @@ function JourneySection({ className }) {
       id="journey"
       className={`flex flex-col mx-6 md:mx-24 md:p-4 ${className}`}
     >
-      <h1 className="flex heading-1 my-16 mx-6 md:mx-24">My Journey</h1>
+      <h1 className="flex heading-1 my-8 py-8 mx-6 md:mx-24">My Journey</h1>
       <JourneyPoint
         duration="08/21 - present"
         organisation="Skit.ai"

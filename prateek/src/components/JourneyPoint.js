@@ -58,7 +58,9 @@ function JourneyPoint({
         onClick={handleClick}
       >
         <h2 className="heading-2 py-1 md:py-2">{organisation}</h2>
-        <h2 className="heading-2 font-light italic py-1 md:py-2">{title}</h2>
+        <h2 className="heading-2 md:text-2xl font-light italic py-1 md:py-2">
+          {title}
+        </h2>
         <p
           className={`paragraph text-sm md:text-base overflow-hidden py-1 md:py-2 ${
             isClicked ? "max-h-fit" : "max-h-48 md:max-h-32"

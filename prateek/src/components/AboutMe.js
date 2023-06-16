@@ -6,7 +6,7 @@ function AboutMe({ className }) {
       id="about"
       className={`flex flex-col justify-center mx-12 md:mx-48 md:p-4 ${className}`}
     >
-      <h1 className="font-sans font-bold text-4xl text-primary my-16">
+      <h1 className="font-sans font-bold text-4xl text-primary my-8 pt-8">
         About Me
       </h1>
       <p className="font-sans text-primary text-xl">
