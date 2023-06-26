@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 
 const TypingAnimation = ({ strings, className }) => {
@@ -24,7 +26,7 @@ const TypingAnimation = ({ strings, className }) => {
   }, [currentIndex, currentText, strings]);
 
   return (
-    <div className={`text-white text-2xl ${className}`}>
+    <div className={`${className}`}>
       <span className="font-sans">{currentText}</span>
       <span className="animate-blink">|</span>
     </div>
