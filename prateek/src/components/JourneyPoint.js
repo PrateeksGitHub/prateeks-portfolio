@@ -54,7 +54,7 @@ function JourneyPoint({
       </div>
       <div
         id="journey-point-info"
-        className="flex flex-col mx-4 md:mx-12 my-4 md:my-8 border-2 border-accent border-opacity-75 p-8 rounded-xl"
+        className="flex flex-col mx-4 md:mx-12 my-4 md:my-8 border-2 border-accent border-opacity-75 p-6 rounded-xl"
         onClick={handleClick}
       >
         <h2 className="heading-2 py-1 md:py-2">{organisation}</h2>

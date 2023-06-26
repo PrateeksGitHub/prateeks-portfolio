@@ -1,18 +1,20 @@
+"use client";
+
 import React from "react";
 import Socials from "./Socials";
 import TypingAnimation from "./TypingAnimation";
 import MessageTypingAnimation from "./MessageTypingAnimation";
-import prateeksBlobPicture from "../assets/prateek-blob-profile-display-picture.png";
+import Image from "next/image";
 
 function HeroSection({ className }) {
   return (
     <section
       id="hero"
-      className={`flex flex-col md:flex-row items-center md:m-4  max-sm:top-32 ${className}`}
+      className={`flex flex-col md:flex-row items-center md:m-4 h-screen ${className}`}
     >
       <div
         id="hero-text-and-action"
-        className="flex flex-col md:w-1/2 my-8 md:my-0 order-2 md:order-1 items-start md:pl-48 pl-12"
+        className="flex flex-col md:w-1/2 my-8 md:my-0 order-2 md:order-1 items-start"
       >
         <h1 className="text-4xl md:text-5xl text-secondary font-sans py-1">
           Welcome! I am
@@ -48,14 +50,17 @@ function HeroSection({ className }) {
       </div>
       <div
         id="profile-picture-and-socials"
-        className="flex flex-row md:w-1/2 order-1 md:order-2 justify-between md:items-center max-sm:mx-12"
+        className="grid grid-cols-[1fr_auto] place-items-center md:w-1/2 h-full w-full max-md:pt-24 order-1 md:order-2 justify-between md:items-center max-md:mx-4"
       >
-        <img
-          src={prateeksBlobPicture}
-          alt="Prateek Profile"
-          className="aspect-auto md:h-full md:w-1/2 flex md:mx-16" //max-sm:h-5/6
-        />
-        <div className="flex-grow"></div>
+        <div className="relative aspect-square w-full max-w-[480px] flex">
+          <Image
+            fill
+            style={{ objectFit: "cover" }}
+            src={"/assets/prateek-blob-profile-display-picture.png"}
+            alt="Prateek Profile"
+            className="aspect-auto"
+          />
+        </div>
         <Socials className="hidden md:flex self-center p-8"></Socials>
       </div>
     </section>

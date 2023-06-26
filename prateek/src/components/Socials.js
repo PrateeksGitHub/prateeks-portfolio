@@ -1,28 +1,32 @@
+"use client";
+
 import React from "react";
-import { ReactComponent as LinkedInLogo } from "../assets/linkedIn-logo.svg";
-import { ReactComponent as GitHub } from "../assets/github-logo.svg";
-import { ReactComponent as DiscordLogo } from "../assets/discord-logo.svg";
-import { ReactComponent as RiotValorantLogo } from "../assets/riot-valorant-logo.svg";
+import {
+  LinkedInLogo,
+  GithubLogo,
+  DiscordLogo,
+  RiotValorantLogo,
+} from "@/assets";
 
 const Socials = ({ className }) => {
   const socialButtonConfig =
     "md:p-2 rounded-lg hover:fill-accent transition duration-300 ease-in-out";
-  const logoConfig = "h-4 md:h-6";
+  const logoConfig = "aspect-square h-5";
   return (
     <ul
-      className={`flex flex-col fill-primary  items-center space-y-4 md:space-y-8 ${className}`}
+      className={`flex flex-col fill-primary items-center space-y-4 md:space-y-8 ${className}`}
     >
       <li className={socialButtonConfig}>
-        <LinkedInLogo className={logoConfig}></LinkedInLogo>
+        <LinkedInLogo className={logoConfig} />
       </li>
       <li className={socialButtonConfig}>
-        <GitHub className={logoConfig}></GitHub>
+        <GithubLogo className={logoConfig} />
       </li>
       <li className={socialButtonConfig}>
-        <DiscordLogo className={logoConfig}></DiscordLogo>
+        <DiscordLogo className={logoConfig} />
       </li>
       <li className={socialButtonConfig}>
-        <RiotValorantLogo className={logoConfig}></RiotValorantLogo>
+        <RiotValorantLogo className={logoConfig} />
       </li>
     </ul>
   );

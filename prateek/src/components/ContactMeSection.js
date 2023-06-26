@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-
+import SendEmail from "./sendMail";
 import MessageTypingAnimation from "./MessageTypingAnimation";
-import sendEmail from "../sendEmail";
 
 function ContactMeSection({ className }) {
   const labelConfig = "block m-3 paragraph text-2xl";
   const inputConfig =
     "bg-background block w-full py-3 px-6 paragraph placeholder-gray-400 placeholder-opacity-60 rounded-xl border-2 border-accent border-opacity-80 hover:border-opacity-100 focus:border-opacity-100 focus:ring-1 focus-visible:outline-none focus:ring-opacity-100 transition-transformation ease-in-out duration-300";
   const [isSubmitting, setIsSubmitting] = useState(false);
+
   function handleSubmit() {
     setIsSubmitting(true);
 
@@ -19,6 +19,19 @@ function ContactMeSection({ className }) {
 
     // Perform any necessary validation or data processing here
     console.log(name, email, phone, message);
+    SendEmail({
+      // senderEmail: "prateeksworkemail@gmail.com",
+      // receiverEmails: "prateekagrawalhere@gmail.com",
+      // subject: "Test",
+      body: "Test body",
+    })
+      .then((info) => {
+        console.log("Email sent successfully!", info.messageId);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+
     // Simulate submission delay
     console.log("Form submitted!");
     setIsSubmitting(false);
@@ -27,7 +40,7 @@ function ContactMeSection({ className }) {
   return (
     <section
       id="contact"
-      className={`flex flex-col justify-center mx-12 md:mx-48 md:p-4 ${className}`}
+      className={`flex flex-col justify-center ${className}`}
     >
       <h1 className="heading-1 my-8 pt-8">Contact Me</h1>
       <p id="contact-me-message" className="paragraph mb-16">
@@ -37,13 +50,13 @@ function ContactMeSection({ className }) {
         collaborations. 💼
       </p>
       <div id="contact-form">
-        <div class="mb-6">
+        <div className="mb-6">
           <label for="name" className={labelConfig}>
             Name*
           </label>
           <input type="text" id="name-input" className={inputConfig}></input>
         </div>
-        <div class="mb-6">
+        <div className="mb-6">
           <label for="email" className={labelConfig}>
             Email ID*
           </label>
