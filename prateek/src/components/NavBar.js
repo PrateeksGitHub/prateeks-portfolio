@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import Socials from "@/components/Socials";
-import { HamburgerMenu } from "@/assets";
 import clsxm from "@/utils/clsxm";
 
 const Navbar = ({ className }) => {
@@ -30,11 +28,6 @@ const Navbar = ({ className }) => {
           className="flex aspect-square font-sans font-bold text-3xl md:hidden z-10 pt-4"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {/* <HamburgerMenu
-            className={`${
-              isMenuOpen ? "fill-primary" : "fill-primary"
-            } w-7 h-7`}
-          /> */}
           <div className={clsxm("flex flex-col space-y-1")}>
             <div
               className={`${genericHamburgerLine} ${

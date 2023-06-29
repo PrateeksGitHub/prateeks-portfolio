@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SendEmail from "./sendMail";
+// import SendEmail from "./sendMail";
 import MessageTypingAnimation from "./MessageTypingAnimation";
 
 function ContactMeSection({ className }) {
@@ -8,8 +8,8 @@ function ContactMeSection({ className }) {
     "bg-background block w-full py-3 px-6 paragraph placeholder-gray-400 placeholder-opacity-60 rounded-xl border-2 border-accent border-opacity-80 hover:border-opacity-100 focus:border-opacity-100 focus:ring-1 focus-visible:outline-none focus:ring-opacity-100 transition-transformation ease-in-out duration-300";
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  function handleSubmit() {
-    setIsSubmitting(true);
+  async function handleSubmit() {
+    // setIsSubmitting(true);
 
     // Retrieve input field values
     const name = document.getElementById("name-input").value;
@@ -19,22 +19,40 @@ function ContactMeSection({ className }) {
 
     // Perform any necessary validation or data processing here
     console.log(name, email, phone, message);
-    SendEmail({
-      // senderEmail: "prateeksworkemail@gmail.com",
-      // receiverEmails: "prateekagrawalhere@gmail.com",
-      // subject: "Test",
-      body: "Test body",
-    })
-      .then((info) => {
-        console.log("Email sent successfully!", info.messageId);
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
+
+    try {
+      setIsSubmitting(true);
+
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          message,
+        }),
       });
 
-    // Simulate submission delay
-    console.log("Form submitted!");
-    setIsSubmitting(false);
+      console.log(response);
+
+      if (response.ok) {
+        // Handle success response
+        console.log("Email sent successfully");
+      } else {
+        // Handle error response
+        console.log("Email sending unsuccessful");
+      }
+    } catch (error) {
+      // Handle network or other errors
+      console.log({ error });
+    } finally {
+      // Simulate submission delay
+      console.log("Form submitted!");
+      setIsSubmitting(false);
+    }
   }
 
   return (
