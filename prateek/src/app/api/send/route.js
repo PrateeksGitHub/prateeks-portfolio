@@ -13,10 +13,14 @@ export async function POST(request) {
     const confirmationEmailBody = `Thanks for getting in touch! I've received your message and will respond shortly.\nFollowing is your form submission summary:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
     console.log(
 <<<<<<< HEAD
+<<<<<<< HEAD
       `Sending email from ${process.env.SENDER_EMAIL_ID} to ${email} and ${process.env.MY_EMAIL_ID}.`
 =======
       `Sending email from ${process.env.SENDER_EMAIL_ID} to ${email} and ${process.env.MY_EMAIL_ID} using API Key ${RESEND_API_KEY}`
 >>>>>>> c068a8b (idek)
+=======
+      `Sending email from ${process.env.SENDER_EMAIL_ID} to ${email} and ${process.env.MY_EMAIL_ID} using API Key ${RESEND_API_KEY}.`
+>>>>>>> 49ef094 (i reallyyy don't know)
     );
     const confirmationEmailResponse = await fetch(
       "https://api.resend.com/emails",
@@ -24,7 +28,7 @@ export async function POST(request) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${RESEND_API_KEY}`,
+          Authorization: `Bearer ${RESEND_API_KEY.toString()}`,
         },
         body: JSON.stringify({
           from: `Prateek <${process.env.SENDER_EMAIL_ID}>`,
