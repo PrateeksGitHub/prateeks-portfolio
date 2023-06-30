@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
-const RESEND_API_KEY = process.env.NEXT_PUBLIC_RESEND_API_KEY;
+const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
 export async function POST(request) {
   try {
@@ -14,6 +14,7 @@ export async function POST(request) {
     console.log(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       `Sending email from ${process.env.SENDER_EMAIL_ID} to ${email} and ${process.env.MY_EMAIL_ID}.`
 =======
       `Sending email from ${process.env.SENDER_EMAIL_ID} to ${email} and ${process.env.MY_EMAIL_ID} using API Key ${RESEND_API_KEY}`
@@ -21,6 +22,9 @@ export async function POST(request) {
 =======
       `Sending email from ${process.env.SENDER_EMAIL_ID} to ${email} and ${process.env.MY_EMAIL_ID} using API Key ${RESEND_API_KEY}.`
 >>>>>>> 49ef094 (i reallyyy don't know)
+=======
+      `Sending email from ${process.env.SENDER_EMAIL_ID} to ${email} and ${process.env.MY_EMAIL_ID}.`
+>>>>>>> 68eb766 (updated api response)
     );
     const confirmationEmailResponse = await fetch(
       "https://api.resend.com/emails",
@@ -45,7 +49,12 @@ export async function POST(request) {
         }),
       }
     );
+    // const json_res = await confirmationEmailResponse.json();
+    // console.log(json_res);
+    const data = confirmationEmailResponse.statusText;
+    console.log(data);
 
+<<<<<<< HEAD
     if (confirmationEmailResponse.ok) {
       console.log("Confirmation email sent successfully.");
       return NextResponse.json({ success: true });
@@ -54,6 +63,12 @@ export async function POST(request) {
       return NextResponse.error("Failed to send confirmation email.", {
         status: 500,
       });
+=======
+    if (confirmationEmailResponse.status == 200) {
+      return NextResponse.json({ success: true });
+    } else {
+      return NextResponse.json({ success: false });
+>>>>>>> 68eb766 (updated api response)
     }
   } catch (error) {
     console.error(error);
