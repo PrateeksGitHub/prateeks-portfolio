@@ -67,52 +67,61 @@ function ContactMeSection({ className }) {
         to me. I'm available for freelance projects and open to new
         collaborations. 💼
       </p>
-      <div id="contact-form">
+      <form onSubmit={handleSubmit} id="contact-form">
         <div className="mb-6">
-          <label for="name" className={labelConfig}>
+          <label htmlFor="name" className={labelConfig}>
             Name*
           </label>
-          <input type="text" id="name-input" className={inputConfig}></input>
+          <input
+            type="text"
+            id="name-input"
+            name="name"
+            className={inputConfig}
+          ></input>
         </div>
         <div className="mb-6">
-          <label for="email" className={labelConfig}>
+          <label htmlFor="email" className={labelConfig}>
             Email ID*
           </label>
           <input
             type="email"
             id="email-input"
+            name="email"
             placeholder="email@example.com"
             className={`${inputConfig}`}
           ></input>
         </div>
         <div className="mb-6">
-          <label for="phone" className={labelConfig}>
+          <label htmlFor="phone" className={labelConfig}>
             Phone Number
           </label>
           <input
             type="tel"
+            name="phone"
             id="phone-input"
             placeholder="+91-1234567890"
             className={`${inputConfig}`}
           />
         </div>
         <div className="mb-6">
-          <label for="message" className={labelConfig}>
+          <label htmlFor="message" className={labelConfig}>
             Message
           </label>
           <textarea
             id="message-input"
+            name="message"
             className={`${inputConfig} h-48 resize-none`}
           ></textarea>
         </div>
-        <MessageTypingAnimation
-          message={isSubmitting ? "Submitting..." : "Contact me"}
-          waveDuration={2000}
-          typingSpeed={200}
-          className="pt-8"
-          onClick={handleSubmit}
-        ></MessageTypingAnimation>
-      </div>
+        <button type="submit" disabled={isSubmitting}>
+          <MessageTypingAnimation
+            message={isSubmitting ? "Submitting..." : "Contact me"}
+            waveDuration={2000}
+            typingSpeed={200}
+            className="pt-8"
+          ></MessageTypingAnimation>
+        </button>
+      </form>
     </section>
   );
 }
