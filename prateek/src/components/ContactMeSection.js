@@ -68,20 +68,41 @@ function ContactMeSection({ className }) {
         to me. I'm available for freelance projects and open to new
         collaborations. 💼
       </p>
+<<<<<<< HEAD
       <form onSubmit={handleSubmit(onSubmit)} id="contact-form">
+=======
+      <form onSubmit={handleSubmit} id="contact-form">
+>>>>>>> 5db8aef (minor contact me form fixes)
         <div className="mb-6">
           <label htmlFor="name" className={labelConfig}>
             Name*
           </label>
+<<<<<<< HEAD
           <input type="text" {...register("name")} className={inputConfig} />
         </div>
         <div className="mb-6">
           <label htmlFor="email" className={clsxm(labelConfig)}>
+=======
+          <input
+            type="text"
+            id="name-input"
+            name="name"
+            className={inputConfig}
+          ></input>
+        </div>
+        <div className="mb-6">
+          <label htmlFor="email" className={labelConfig}>
+>>>>>>> 5db8aef (minor contact me form fixes)
             Email ID*
           </label>
           <input
             type="email"
+<<<<<<< HEAD
             {...register("email", { required: "Email is required" })}
+=======
+            id="email-input"
+            name="email"
+>>>>>>> 5db8aef (minor contact me form fixes)
             placeholder="email@example.com"
             className={`${inputConfig}`}
           ></input>
@@ -97,12 +118,18 @@ function ContactMeSection({ className }) {
           </label>
           <input
             type="tel"
+<<<<<<< HEAD
             {...register("phone")}
+=======
+            name="phone"
+            id="phone-input"
+>>>>>>> 5db8aef (minor contact me form fixes)
             placeholder="+91-1234567890"
             className={`${inputConfig}`}
           />
         </div>
         <div className="mb-6">
+<<<<<<< HEAD
           <label
             htmlFor="message"
             className={clsxm(labelConfig, errors.message)}
@@ -112,6 +139,15 @@ function ContactMeSection({ className }) {
           <textarea
             {...register("message", { required: "Type in some message." })}
             className={clsxm(inputConfig, "h-48 resize-none")}
+=======
+          <label htmlFor="message" className={labelConfig}>
+            Message
+          </label>
+          <textarea
+            id="message-input"
+            name="message"
+            className={`${inputConfig} h-48 resize-none`}
+>>>>>>> 5db8aef (minor contact me form fixes)
           ></textarea>
           {errors.message && (
             <p className="text-red-400 pt-1 font-sans" role="alert">
@@ -119,6 +155,7 @@ function ContactMeSection({ className }) {
             </p>
           )}
         </div>
+<<<<<<< HEAD
         {submissionStatus === "success" && (
           <p className="text-green-400 font-sans">Email sent successfully!</p>
         )}
@@ -128,6 +165,8 @@ function ContactMeSection({ className }) {
           </p>
         )}
 
+=======
+>>>>>>> 5db8aef (minor contact me form fixes)
         <button type="submit" disabled={isSubmitting}>
           <MessageTypingAnimation
             message={isSubmitting ? "Submitting..." : "Contact me"}
