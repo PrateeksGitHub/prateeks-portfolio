@@ -12,7 +12,7 @@ export async function POST(request) {
     const { name, email, phone, message } = requestData;
     const confirmationEmailBody = `Thanks for getting in touch! I've received your message and will respond shortly.\nFollowing is your form submission summary:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
     console.log(
-      `Sending email from ${process.env.SENDER_EMAIL_ID} to ${email} and ${process.env.MY_EMAIL_ID}`
+      `Sending email from ${process.env.SENDER_EMAIL_ID} to ${email} and ${process.env.MY_EMAIL_ID} using API Key ${RESEND_API_KEY}`
     );
     const confirmationEmailResponse = await fetch(
       "https://api.resend.com/emails",
