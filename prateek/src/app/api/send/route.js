@@ -49,11 +49,8 @@ export async function POST(request) {
         }),
       }
     );
-    // const json_res = await confirmationEmailResponse.json();
-    // console.log(json_res);
-    const data = confirmationEmailResponse.statusText;
-    console.log(data);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     if (confirmationEmailResponse.ok) {
       console.log("Confirmation email sent successfully.");
@@ -69,6 +66,16 @@ export async function POST(request) {
     } else {
       return NextResponse.json({ success: false });
 >>>>>>> 68eb766 (updated api response)
+=======
+    if (confirmationEmailResponse.ok) {
+      console.log("Confirmation email sent successfully.");
+      return NextResponse.json({ success: true });
+    } else {
+      console.log("Failed to send confirmation email.");
+      return NextResponse.error("Failed to send confirmation email.", {
+        status: 500,
+      });
+>>>>>>> c012fe6 (added validation and succes and failure message to the contact me form)
     }
   } catch (error) {
     console.error(error);
