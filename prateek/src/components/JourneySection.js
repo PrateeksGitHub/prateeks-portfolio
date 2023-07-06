@@ -4,20 +4,20 @@ import clsxm from "@/utils/clsxm";
 
 function JourneySection({ className }) {
   return (
-    <section id="journey" className={clsxm("flex flex-col md:p-4", className)}>
-      <h1 className="flex heading-1 mb-16">My Journey</h1>
+    <section id="journey" className={clsxm("flex flex-col", className)}>
+      <h1 className="flex font-bold text-4xl mb-16">My Journey</h1>
       <JourneyPoint
         duration="August 2021 - present"
         location="Bengaluru, India"
         organisation="Skit.ai"
         title="Software Developer"
         details={
-          <ul className="list-disc ml-4 md:ml-8">
+          <ul className="list-disc ml-4 md:ml-8 leading-relaxed">
+            <li>Maintained 2 Django REST Framework based servers.</li>
             <ul className="list-disc ml-4 md:ml-8">
-              <li>Maintained 2 Django REST Framework based servers.</li>
+              <li>Implemented several APIs for these microservices.</li>
               <li>Various REST and SOAP 3rd party API Integrations.</li>
             </ul>
-            <li>Implemented several APIs for these microservices.</li>
             <li>
               Owned a number of Analytics pipelines E2E{" "}
               <ul className="list-disc ml-4 md:ml-8">
@@ -44,7 +44,7 @@ function JourneySection({ className }) {
         title="Business Analyst Intern"
         location="Bengaluru, India"
         details={
-          <ul className="list-disc ml-4 md:ml-8">
+          <ul className="list-disc ml-4 md:ml-8 leading-relaxed">
             <li>
               Conducted user interviews to get insights on their purchasing
               experience

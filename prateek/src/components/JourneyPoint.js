@@ -65,18 +65,16 @@ function JourneyPoint({
         className="flex flex-col w-full mx-4 md:mx-12 my-4 md:my-8 p-6 rounded-xl border-2 border-accent border-opacity-75 hover:border-opacity-100 transition-transformation ease-in-out duration-300"
         onClick={handleClick}
       >
-        <h2 className="heading-2 py-1 md:py-2">{organisation}</h2>
-        <h2 className="heading-2 md:text-2xl font-light italic py-1 md:py-2">
-          {title}
-        </h2>
+        <h2 className="font-bold text-2xl md:text-3xl py-1">{organisation}</h2>
+        <h2 className="text-2xl font-light italic py-1">{title}</h2>
         <span
-          className={`overflow-hidden py-1 md:py-2 ${
+          className={`overflow-hidden py-1 md:py-2 md:text-lg ${
             isClicked ? "max-h-fit" : "max-h-48 md:max-h-32"
           }`}
         >
           {details}
         </span>
-        <p className="!text-accent mt-4">
+        <p className="!text-accent mt-4 md:text-lg">
           {isClicked ? `read less.` : `read more.`}
         </p>
         <div className="flex flex-row">

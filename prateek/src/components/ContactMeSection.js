@@ -61,8 +61,8 @@ function ContactMeSection({ className }) {
       id="contact"
       className={`flex flex-col justify-center ${className}`}
     >
-      <h1 className="heading-1 my-8 pt-8">Contact Me</h1>
-      <p id="contact-me-message" className="mb-16">
+      <h1 className="font-bold text-4xl mb-8">Contact Me</h1>
+      <p id="contact-me-message" className="text-lg mb-16">
         Thank you for visiting my profile! If you have any questions or would
         like to discuss potential opportunities, please feel free to reach out
         to me. I'm available for freelance projects and open to new

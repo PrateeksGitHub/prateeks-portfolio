@@ -27,11 +27,10 @@ function SkillsSection({ className }) {
       id="skills"
       className={`flex flex-col justify-center ${className}`}
     >
-      <h1 className="flex font-sans font-bold text-4xl text-primary">
+      <h1 className="flex font-sans font-bold text-4xl text-primary mb-8">
         My Toolkit
       </h1>
-      {/* <div className="flex flex-wrap justify-around items-center -mx-8 md:-mx-12 mt-8"> */}
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-60 items-center -mx-4 md:-mx-12 mt-8">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-60 items-center -mx-4 md:-mx-12">
         <SkillTile SkillLogo={PythonLogo} skillName="Python" />
         <SkillTile SkillLogo={JavaScriptLogo} skillName="JavaScript" />
         <SkillTile SkillLogo={DjangoLogo} skillName="Django" />

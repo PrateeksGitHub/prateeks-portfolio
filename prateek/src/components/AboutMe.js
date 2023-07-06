@@ -5,8 +5,8 @@ import React from "react";
 function AboutMe({ className }) {
   return (
     <section id="about" className={`flex flex-col justify-center ${className}`}>
-      <h1 className="font-sans font-bold text-4xl text-primary">About Me</h1>
-      <p className="font-sans text-primary text-xl mt-8">
+      <h1 className="font-bold text-4xl mb-8">About Me</h1>
+      <p className="text-primary text-xl leading-relaxed">
         As a FullStack Developer with 2 years of experience at Skit.ai, I have
         honed my craft in designing, building, and maintaining production grade
         software & data pipelines at scale. 👨‍💻 I am a beginner at UI-UX Design

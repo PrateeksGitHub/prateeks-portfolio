@@ -13,10 +13,10 @@ export default function Home() {
         {/* <p className="text-white text-xl">Hellooooo!</p> */}
         <Navbar className="relative z-10"></Navbar>
         <HeroSection className="flex-grow relative z-0"></HeroSection>
-        <AboutMe className="my-24 max-md:pt-16"></AboutMe>
-        <SkillsSection className="my-24"></SkillsSection>
-        <JourneySection className="my-24"></JourneySection>
-        <ContactMeSection className="my-24"></ContactMeSection>
+        <AboutMe className="my-16 max-md:pt-16"></AboutMe>
+        <SkillsSection className="my-16"></SkillsSection>
+        <JourneySection className="my-16"></JourneySection>
+        <ContactMeSection className="my-16"></ContactMeSection>
       </div>
     </main>
   );
