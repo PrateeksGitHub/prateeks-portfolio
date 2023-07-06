@@ -37,15 +37,15 @@ export async function POST(request) {
         }),
       }
     );
-    // const json_res = await confirmationEmailResponse.json();
-    // console.log(json_res);
-    const data = confirmationEmailResponse.statusText;
-    console.log(data);
 
-    if (confirmationEmailResponse.status == 200) {
+    if (confirmationEmailResponse.ok) {
+      console.log("Confirmation email sent successfully.");
       return NextResponse.json({ success: true });
     } else {
-      return NextResponse.json({ success: false });
+      console.log("Failed to send confirmation email.");
+      return NextResponse.error("Failed to send confirmation email.", {
+        status: 500,
+      });
     }
   } catch (error) {
     console.error(error);
