@@ -17,3 +17,5 @@ export { default as PandasLogo } from "./skills/PandasLogo";
 export { default as PostgresqlLogo } from "./skills/PostgresqlLogo";
 export { default as ReactJSLogo } from "./skills/ReactJSLogo";
 export { default as SentryLogo } from "./skills/SentryLogo";
+export { default as CalendarIcon } from "./CalendarIcon";
+export { default as LocationIcon } from "./LocationIcon";

@@ -4,9 +4,9 @@ import { useForm } from "react-hook-form";
 import clsxm from "@/utils/clsxm";
 
 function ContactMeSection({ className }) {
-  const labelConfig = "block m-3 paragraph text-2xl";
+  const labelConfig = "block m-3 text-2xl";
   const inputConfig =
-    "bg-background block w-full py-3 px-6 paragraph placeholder-gray-400 placeholder-opacity-60 rounded-xl border-2 border-accent border-opacity-80 hover:border-opacity-100 focus:border-opacity-100 focus:ring-1 focus-visible:outline-none focus:ring-opacity-100 transition-transformation ease-in-out duration-300";
+    "bg-background block w-full py-3 px-6 placeholder-gray-400 placeholder-opacity-60 rounded-xl border-2 border-accent border-opacity-80 hover:border-opacity-100 focus:border-opacity-100 focus:ring-1 focus-visible:outline-none focus:ring-opacity-100 transition-transformation ease-in-out duration-300";
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState(null);
   const {
@@ -62,7 +62,7 @@ function ContactMeSection({ className }) {
       className={`flex flex-col justify-center ${className}`}
     >
       <h1 className="heading-1 my-8 pt-8">Contact Me</h1>
-      <p id="contact-me-message" className="paragraph mb-16">
+      <p id="contact-me-message" className="mb-16">
         Thank you for visiting my profile! If you have any questions or would
         like to discuss potential opportunities, please feel free to reach out
         to me. I'm available for freelance projects and open to new
@@ -76,10 +76,7 @@ function ContactMeSection({ className }) {
           <input type="text" {...register("name")} className={inputConfig} />
         </div>
         <div className="mb-6">
-          <label
-            htmlFor="email"
-            className={clsxm(labelConfig, errors.email && "!text-red-400")}
-          >
+          <label htmlFor="email" className={clsxm(labelConfig)}>
             Email ID*
           </label>
           <input
@@ -108,7 +105,7 @@ function ContactMeSection({ className }) {
         <div className="mb-6">
           <label
             htmlFor="message"
-            className={clsxm(labelConfig, errors.message && "!text-red-400")}
+            className={clsxm(labelConfig, errors.message)}
           >
             Message*
           </label>
