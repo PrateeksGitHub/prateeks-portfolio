@@ -13,11 +13,11 @@ function JourneySection({ className }) {
         title="Software Developer"
         details={
           <ul className="list-disc ml-4 md:ml-8">
+            <li>Maintained 2 Django REST Framework based servers.</li>
             <ul className="list-disc ml-4 md:ml-8">
-              <li>Maintained 2 Django REST Framework based servers.</li>
+              <li>Implemented several APIs for these microservices.</li>
               <li>Various REST and SOAP 3rd party API Integrations.</li>
             </ul>
-            <li>Implemented several APIs for these microservices.</li>
             <li>
               Owned a number of Analytics pipelines E2E{" "}
               <ul className="list-disc ml-4 md:ml-8">

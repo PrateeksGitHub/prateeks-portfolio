@@ -70,13 +70,13 @@ function JourneyPoint({
           {title}
         </h2>
         <span
-          className={`overflow-hidden py-1 md:py-2 ${
+          className={`overflow-hidden py-1 md:py-2 md:text-lg ${
             isClicked ? "max-h-fit" : "max-h-48 md:max-h-32"
           }`}
         >
           {details}
         </span>
-        <p className="!text-accent mt-4">
+        <p className="!text-accent mt-4 md:text-lg">
           {isClicked ? `read less.` : `read more.`}
         </p>
         <div className="flex flex-row">
