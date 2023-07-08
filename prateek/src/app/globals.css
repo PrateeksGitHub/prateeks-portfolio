@@ -50,7 +50,7 @@ code {
   animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
 }
 
-/* Change Autocomplete styles in Chrome*/
+/* Change Autocomplete styles in Chrome */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -60,7 +60,8 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
+  -webkit-font-feature-settings: normal;
   -webkit-text-fill-color: #E8E8E8;
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-  transition: background-color 200s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0 1000px #161A2E inset; /* Update the background color */
+  transition: background-color 200s ease-in-out 0s; /* Adjust the transition property */
 }
