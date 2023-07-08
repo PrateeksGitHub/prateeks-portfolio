@@ -60,7 +60,7 @@ const Navbar = ({ className }) => {
               className={buttonClassConfig}
               onClick={() => scrollToSection("hero")}
             >
-              home
+              Home
             </button>
           </li>
           <li>
@@ -68,7 +68,7 @@ const Navbar = ({ className }) => {
               className={buttonClassConfig}
               onClick={() => scrollToSection("about")}
             >
-              about
+              About
             </button>
           </li>
           <li>
@@ -76,7 +76,7 @@ const Navbar = ({ className }) => {
               className={buttonClassConfig}
               onClick={() => scrollToSection("skills")}
             >
-              skills
+              Skills
             </button>
           </li>
 
@@ -85,7 +85,7 @@ const Navbar = ({ className }) => {
               className={buttonClassConfig}
               onClick={() => scrollToSection("journey")}
             >
-              experience
+              Experience
             </button>
           </li>
           <li>
@@ -93,7 +93,7 @@ const Navbar = ({ className }) => {
               className={buttonClassConfig}
               onClick={() => scrollToSection("contact")}
             >
-              connect
+              Connect
             </button>
           </li>
         </ul>
